@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mc Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-red-600 fw-bold" href="#">McDonald's</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-4">
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-house"></i>
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-list-ul"></i>
+              <a class="nav-link text-white" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-cart-shopping"
+                ><sup class="sup none"></sup
+              ></i>
+              <a class="nav-link text-white" href="Cart Page/Cart.html">Cart</a>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <a class="nav-link text-white" href="Contact  page/Contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-regular fa-address-card"></i>
+              <a class="nav-link text-white" href="About-Us page/aboutus.html"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- سلايدر -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./vecteezy_mcdonald-s-logo-on-transparent-white-background_13948540.jpg"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./flat-lay-burger-with-fries-ketchup.jpg"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./burger.jpg"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- قسم ترحيبي -->
+    <section class="container text-center my-5">
+      <h2 class="text-4xl font-bold text-red-600 mb-3">
+        Welcome to McDonald's
+      </h2>
+      <p class="text-gray-700">
+        Discover the taste of happiness! Explore our menu and enjoy your
+        favorite meals anytime.
+      </p>
+    </section>
+
+    <!-- أشهر الأصناف -->
+    <section class="container my-5">
+      <h3 class="text-3xl font-semibold text-center text-red-500 mb-4">
+        Featured Items
+      </h3>
+      <div class="row justify-content-center gap-4">
+        <!-- كروت أصناف (زي ما عملنا قبل كده) -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 border border-gray-200"
+            style="height: 100%; min-height: 450px; width: 300px"
+          >
+            <img
+              src="/McChicken.jpeg"
+              class="rounded mb-3 w-full object-contain h-40"
+              alt="Big Mac"
+            />
+            <h4 class="text-xl font-semibold mb-2">Big Mac</h4>
+            <p class="text-gray-600 text-sm mb-4" style="height: 80px">
+              Two all-beef patties, special sauce, lettuce, cheese, pickles,
+              onions – on a sesame seed bun.
+            </p>
+            <span class="text-lg font-bold text-red-600">120 EGP</span>
+          </div>
+        </div>
+
+        <!-- كارد تاني -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 border border-gray-200"
+            style="height: 100%; min-height: 450px; width: 300px"
+          >
+            <img
+              src="/V-cola.png"
+              class="rounded mb-3 w-full object-contain h-40"
+              alt="Fries"
+            />
+            <h4 class="text-xl font-semibold mb-2">V-cola</h4>
+            <p class="text-gray-600 text-sm mb-4" style="height: 80px">
+              Our golden crispy fries with just the right amount of salt.
+            </p>
+            <span class="text-lg font-bold text-red-600">45 EGP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- المميزات -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h3 class="text-2xl font-semibold mb-4 text-red-600">Why Choose Us?</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fa-solid fa-burger fa-2x text-red-500 mb-2"></i>
+            <h5>Delicious Meals</h5>
+            <p class="text-sm text-gray-600">
+              Enjoy the best taste and quality in every bite.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-truck-fast fa-2x text-red-500 mb-2"></i>
+            <h5>Fast Delivery</h5>
+            <p class="text-sm text-gray-600">
+              Get your order fresh and fast wherever you are.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i
+              class="fa-solid fa-hand-holding-heart fa-2x text-red-500 mb-2"
+            ></i>
+            <h5>Best Service</h5>
+            <p class="text-sm text-gray-600">
+              We value every customer and make sure you're happy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- دعوة للحجز أو الطلب -->
+    <section class="bg-red-600 text-white text-center py-5">
+      <h3 class="text-3xl font-bold mb-3">Ready to Order?</h3>
+      <p class="mb-4">
+        Visit our menu and get your favorite meals delivered to your door!
+      </p>
+      <a href="menu.html" class="btn btn-light px-4 py-2 fw-bold"
+        >Explore Menu</a
+      >
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 McDonald's. All rights reserved.</p>
+        <small>Follow us on social media</small>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
