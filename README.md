@@ -63,4 +63,8 @@ You can deploy this project on GitHub Pages or any static hosting service. Just 
 This project is for educational purposes.
 
 ---
+<<<<<<< HEAD
 Feel free to contribute or open issues for suggestions!
+=======
+Feel free to contribute or open issues for suggestions!
+>>>>>>> dec8108db962252f99cdedb153afdaabebcf5f02
