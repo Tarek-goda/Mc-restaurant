@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="Contact.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Mc About-Us</title>
+    <title>Mc Contact</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
@@ -47,23 +47,19 @@
               <i class="fa-solid fa-cart-shopping"
                 ><sup class="sup none"></sup
               ></i>
-              <a class="nav-link text-white" href="../Cart Page/Cart.html"
+              <a class="nav-link text-white" href="../Cart/Cart.html"
                 >Cart</a
               >
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-solid fa-phone"></i>
-              <a
-                class="nav-link text-white"
-                href="../Contact  page/Contact.html"
-                >Contact</a
-              >
+              <a class="nav-link text-white" href="#">Contact</a>
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-regular fa-address-card"></i>
               <a
                 class="nav-link text-white"
-                href="../About-Us page/aboutus.html"
+                href="../about/aboutus.html"
                 >About Us</a
               >
             </li>
@@ -72,67 +68,62 @@
       </div>
     </nav>
     <header class="bg-dark text-white text-center py-5">
-      <h1>About McDonald's</h1>
-      <p class="lead">Learn more about who we are and what we do</p>
+      <h1>Contact Us</h1>
+      <p class="lead">We'd love to hear from you</p>
     </header>
 
     <section class="container my-5">
-      <h2 class="mb-3">Our Story</h2>
-      <p>
-        McDonald's has been serving smiles since 1940. Our goal is to provide
-        quick, delicious meals for families and friends around the globe. We
-        started from a small drive-in and grew into one of the most recognized
-        brands worldwide.
-      </p>
+      <h2>Get In Touch</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Send Message</button>
+      </form>
     </section>
 
     <section class="bg-light py-5">
       <div class="container">
-        <h2 class="mb-4">Our Vision & Values</h2>
-        <ul>
-          <li>Quality food, fast service</li>
-          <li>Commitment to customer satisfaction</li>
-          <li>Innovation in the food industry</li>
-          <li>Responsibility toward the community</li>
-        </ul>
+        <h2 class="mb-4">Visit Us</h2>
+        <p><strong>Address:</strong> 123 McDonald's Street, Cairo, Egypt</p>
+        <p><strong>Phone:</strong> +20 100 000 0000</p>
+        <p><strong>Email:</strong> contact@mcdonalds.eg</p>
       </div>
     </section>
 
     <section class="container my-5">
-      <h2 class="mb-3">Meet Our Team</h2>
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <img
-            src="WhatsApp Image 2025-02-19 at 02.35.46_f08a0d92.jpg"
-            class="rounded-circle mb-3"
-            width="150"
-            alt="Manager"
-          />
-          <h5>Tarek Goda</h5>
-          <p>General Manager</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <img
-            src="pngtree-chef-woman-hijab-cooking-cake-png-image_6555305.png"
-            class="rounded-circle mb-3"
-            width="150"
-            alt="Chef"
-          />
-          <h5>Jane Doe</h5>
-          <p>Head Chef</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <img
-            src="2.jpg.14d8156bb72f2875112a5d06344b9d0c.jpg"
-            class="rounded-circle mb-3"
-            width="150"
-            alt="Customer Care"
-          />
-          <h5>Ali Mahmoud</h5>
-          <p>Customer Care Lead</p>
-        </div>
-      </div>
+      <h2>Follow Us</h2>
+      <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
     </section>
+
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container text-center">
         <p class="mb-1">&copy; 2025 McDonald's. All rights reserved.</p>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Contact.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Mc Contact</title>
+    <title>MC Menu</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
@@ -37,99 +37,59 @@
           <ul class="navbar-nav ms-auto gap-4">
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-solid fa-house"></i>
-              <a class="nav-link text-white" href="../index.html">Home</a>
+              <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-solid fa-list-ul"></i>
-              <a class="nav-link text-white" href="../menu.html">Menu</a>
+              <a class="nav-link text-white" href="menu.html">Menu</a>
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-solid fa-cart-shopping"
                 ><sup class="sup none"></sup
               ></i>
-              <a class="nav-link text-white" href="../Cart Page/Cart.html"
-                >Cart</a
-              >
+              <a class="nav-link text-white" href="Cart/Cart.html">Cart</a>
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-solid fa-phone"></i>
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="Contact/Contact.html">Contact</a>
             </li>
             <li class="nav-item d-flex align-items-center gap-2">
               <i class="fa-regular fa-address-card"></i>
-              <a
-                class="nav-link text-white"
-                href="../About-Us page/aboutus.html"
-                >About Us</a
-              >
+              <a class="nav-link text-white" href="about/aboutus.html">About Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="bg-dark text-white text-center py-5">
-      <h1>Contact Us</h1>
-      <p class="lead">We'd love to hear from you</p>
-    </header>
+    <!-- Menu Page -->
+    <section class="bg-white py-10 px-4">
+      <div
+        id="message-box"
+        class="hidden fixed top-5 left-1/2 transform -translate-x-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded shadow-lg z-50"
+      ></div>
+      <div
+        id="Confirmation-message"
+        class="hidden fixed top-5 left-1/2 transform -translate-x-1/2 bg-green-100 border border-red-400 text-red-700 px-4 py-2 rounded shadow-lg z-50"
+      ></div>
 
-    <section class="container my-5">
-      <h2>Get In Touch</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Your Name"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Your Email"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea
-            class="form-control"
-            id="message"
-            rows="5"
-            placeholder="Your Message"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-danger">Send Message</button>
-      </form>
-    </section>
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-red-600 mb-8">
+          Our Menu
+        </h2>
+        <div class="row">
+          <div class="row" id="menuContainer"></div>
 
-    <section class="bg-light py-5">
-      <div class="container">
-        <h2 class="mb-4">Visit Us</h2>
-        <p><strong>Address:</strong> 123 McDonald's Street, Cairo, Egypt</p>
-        <p><strong>Phone:</strong> +20 100 000 0000</p>
-        <p><strong>Email:</strong> contact@mcdonalds.eg</p>
+          <!-- Add more burger cards similarly -->
+        </div>
       </div>
     </section>
-
-    <section class="container my-5">
-      <h2>Follow Us</h2>
-      <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-    </section>
-
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container text-center">
         <p class="mb-1">&copy; 2025 McDonald's. All rights reserved.</p>
         <small>Follow us on social media</small>
       </div>
     </footer>
+    <script type="module" src="menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

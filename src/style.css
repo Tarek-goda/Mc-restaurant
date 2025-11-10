@@ -1,0 +1,25 @@
+i {
+  color: #fff;
+}
+
+/* Carousel image fix: keep images responsive and prevent them from stretching
+   - width: 100% keeps the image filling the carousel width
+   - max-height constrains the visual height so the slider doesn't become huge
+   - object-fit: cover keeps the image aspect and crops edges when necessary
+*/
+.carousel-item img,
+.carousel-inner img,
+.carousel img {
+  width: 100vh;
+  height: 100vh; /* adjust this value if you want a taller/shorter slider */
+  max-height: 70vh; /* prevents overflow on small screens */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img,
+  .carousel-inner img,
+  .carousel img {
+    height: 50vh;
+  }
+}
