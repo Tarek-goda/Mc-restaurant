@@ -4,7 +4,7 @@ This repository contains a web-based restaurant application for McDonald's, buil
 
 - **Home page**: Main landing, About Us, Contact, Cart, and Menu pages
 - **menu page**: Additional Cart page
-
+- **Projcet Live** : https://mc-restaurant.netlify.app/
 ## Features
 - Responsive navigation bar with links to all main pages
 - Dynamic menu with add-to-cart functionality
